@@ -2,7 +2,9 @@
 
 ## 🧠 Visão Geral
 
-Este projeto realiza uma análise em larga escala sobre **saúde mental e burnout de estudantes**, explorando como fatores comportamentais e acadêmicos impactam o nível de estresse e o risco de evasão.
+Este projeto realiza uma análise em larga escala sobre **saúde mental e burnout de estudantes**, explorando como fatores comportamentais e acadêmicos impactam o nível de estresse e o risco de evasão. O Dataset foi retirado do Kaggle, e o link para acessá-lo está logo abaixo:
+
+[Link do Dataset](https://www.kaggle.com/datasets/ayeshasiddiqa123/student-health/data)
 
 O objetivo é gerar **insights acionáveis** que possam ajudar instituições educacionais a identificar padrões e agir preventivamente.
 
@@ -29,7 +31,7 @@ O objetivo é gerar **insights acionáveis** que possam ajudar instituições ed
 ```id="zsk4fn"
 📁 Projeto
 │
-├── cleaned.py                              # Limpeza e tratamento dos dados
+├── cleaned.py                              # Adição dos dados para o Banco de dados
 ├── Estudos_sql.sql                        # Consultas SQL para análise
 ├── Student_lifestyle.pbix                 # Dashboard no Power BI
 ├── Student_mental_health_burnout_1M.csv   # Dataset original
@@ -39,7 +41,7 @@ O objetivo é gerar **insights acionáveis** que possam ajudar instituições ed
 
 ## 🛠️ Tecnologias Utilizadas
 
-* 🐍 Python (Pandas)
+* 🐍 Python (Pandas | SqlAlchemy | Urlilib.parse)
 * 🐘 PostgreSQL
 * 📊 Power BI
 * 🧠 SQL
@@ -52,11 +54,9 @@ O objetivo é gerar **insights acionáveis** que possam ajudar instituições ed
 
    * Dataset com mais de 1 milhão de registros
 
-2. **Tratamento (Python)**
+2. **Adição dos Dados para o Postgre(Python)**
 
-   * Limpeza de dados
-   * Padronização
-   * Preparação para análise
+   * Cração do Código para conectar com o Banco de Dados
 
 3. **Transformação (SQL)**
 
